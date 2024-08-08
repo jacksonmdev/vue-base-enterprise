@@ -1,0 +1,15 @@
+{
+  "common": {
+    "app": {
+      "name": "HRMS",
+      "version": "ver.1.0.0",
+      "sidebar_default_menu": "Main Menu",
+      "sidebar_admin_menu": "Administration"
+    },
+    "buttons": {
+      "submit": "Submit",
+      "close": "Close",
+      "cancel": "Cancel"
+    }
+  }
+}
