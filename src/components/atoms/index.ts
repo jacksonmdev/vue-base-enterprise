@@ -1,1 +1,1 @@
-//export { default as Component } from './component.vue'
+export { default as AtomSample } from './atom-sample.vue'
