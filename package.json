@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "commitlint": "commitlint --edit",
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "lint": "eslint --fix --ext .js,.ts,.vue ./",
@@ -21,6 +22,8 @@
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@quasar/vite-plugin": "^1.7.0",
     "@types/node": "^20.14.2",
     "@typescript-eslint/eslint-plugin": "^7.13.0",
@@ -30,6 +33,7 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.26.0",
+    "husky": "^9.1.4",
     "prettier": "^3.3.2",
     "sass": "^1.77.5",
     "typescript": "^5.4.5",
