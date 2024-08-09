@@ -7,7 +7,7 @@
     "commitlint": "commitlint --edit",
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "lint": "npx eslint ./",
+    "lint": "cross-env NODE_ENV=production npx eslint ./",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -31,6 +31,7 @@
     "@types/node": "^22.1.0",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vue/tsconfig": "^0.5.1",
+    "cross-env": "^7.0.3",
     "eslint": "^9.8.0",
     "eslint-plugin-vue": "^9.27.0",
     "globals": "^15.9.0",
