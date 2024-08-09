@@ -12,7 +12,8 @@
     "build:prod": "cross-env NODE_ENV=production npx eslint ./ && vue-tsc && vite build --mode prod",
     "lint": "cross-env NODE_ENV=local npx eslint ./",
     "lint:prod": "cross-env NODE_ENV=production npx eslint ./",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.12",
