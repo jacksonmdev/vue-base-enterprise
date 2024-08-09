@@ -15,7 +15,7 @@ const config = useAppConfig(app)
 
 config.loadCoreUiComponents()
 config.loadComponents()
-config.setLocal('en')
+config.setLocal('en', true)
 config.setStore()
 
 app.mount('#app')
