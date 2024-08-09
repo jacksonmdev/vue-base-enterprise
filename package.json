@@ -11,15 +11,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@quasar/extras": "^1.16.11",
+    "@quasar/extras": "^1.16.12",
     "@types/isotope-layout": "^3.0.13",
     "@unhead/vue": "^1.9.16",
     "@vueuse/core": "^10.11.1",
     "isotope-layout": "^3.0.6",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
-    "quasar": "^2.16.4",
-    "vue": "^3.4.28",
+    "quasar": "^2.16.8",
+    "vue": "^3.4.37",
     "vue-i18n": "^9.13.1",
     "vue-router": "^4.3.3"
   },
@@ -36,10 +36,10 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.26.0",
     "husky": "^9.1.4",
-    "prettier": "^3.3.2",
-    "sass": "^1.77.5",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
     "typescript": "^5.4.5",
     "vite": "^5.3.1",
-    "vue-tsc": "^2.0.21"
+    "vue-tsc": "^2.0.29"
   }
 }
