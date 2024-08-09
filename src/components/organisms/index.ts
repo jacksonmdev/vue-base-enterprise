@@ -1,5 +1,1 @@
-export { default as AppDrawer } from './app-drawer.vue'
-export { default as AppHeader } from './app-header.vue'
-export { default as DashboardTimelog } from './dashboard-timelog.vue'
-export { default as MemberBoard } from './member-board.vue'
-export { default as RequestsBoard } from './requests-board.vue'
+//export { default as Component } from './component.vue'
