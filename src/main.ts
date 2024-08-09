@@ -12,6 +12,8 @@ app.use(Quasar, {
 })
 
 const config = useAppConfig(app)
+
+config.loadCoreUiComponents()
 config.loadComponents()
 config.setLocal('en')
 config.setStore()

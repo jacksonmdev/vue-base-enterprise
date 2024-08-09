@@ -11,10 +11,6 @@
       :menu="defaultMenu"
     ></SidebarMenu>
     <q-separator></q-separator>
-    <SidebarMenu
-      :title="$t('common.app.sidebar_admin_menu')"
-      :menu="adminMenu"
-    ></SidebarMenu>
   </q-drawer>
 </template>
 
@@ -30,7 +26,6 @@ const side = computed(() =>
 )
 
 const defaultMenu = computed(() => SidebarNavigation().defaultMenu)
-const adminMenu = computed(() => SidebarNavigation().adminMenu)
 </script>
 
 <style scoped></style>
