@@ -5,7 +5,11 @@ import pluginVue from 'eslint-plugin-vue'
 
 export default [
   { files: ['**/*.{js,mjs,cjs,ts,vue}'] },
-  { languageOptions: { globals: globals.browser } },
+  {
+    languageOptions: {
+      globals: { ...globals.browser, ...globals.node },
+    },
+  },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/essential'],
@@ -21,7 +25,7 @@ export default [
       '@typescript-eslint/no-var-requires': 'off',
       'no-unused-vars': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
-      // 'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+      'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
       'vue/multi-word-component-names': ['warn'],
     },
   },
