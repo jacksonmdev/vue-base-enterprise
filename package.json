@@ -13,6 +13,8 @@
   "dependencies": {
     "@quasar/extras": "^1.16.11",
     "@types/isotope-layout": "^3.0.13",
+    "@unhead/vue": "^1.9.16",
+    "@vueuse/core": "^10.11.1",
     "isotope-layout": "^3.0.6",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
