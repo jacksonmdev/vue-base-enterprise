@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import { usePageHead, t } from 'src/core/composables'
+import { usePageHead, t } from 'modules/base/composables'
 
 usePageHead({
   title: t('errors.500.tagline'),
