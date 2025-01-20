@@ -3,7 +3,6 @@ import { createI18n } from 'vue-i18n'
 import { createPinia } from 'pinia'
 import type { AppConfig } from 'modules/base/types'
 import * as CoreUiComponents from 'modules/base/ui'
-import * as Components from 'src/components'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import defaultEn from 'modules/base/locales/en.json'
 import customEn from 'src/locales/en.json'
@@ -17,8 +16,8 @@ export const useAppConfig = (app: App<Element>) => {
       return config
     },
 
-    loadComponents: (): AppConfig => {
-      Object.entries(Components).forEach(([name, component]) =>
+    loadComponents: (components: any[]): AppConfig => {
+      Object.entries(components).forEach(([name, component]) =>
         app.component(name, component),
       )
       return config

@@ -16,7 +16,7 @@ app.use(Quasar, {
 const config = useAppConfig(app)
 
 config.loadCoreUiComponents()
-config.loadComponents()
+// config.loadComponents('/path/to/components') <------ This is if you want to load components globally.
 config.setLocal('en', true)
 config.setStore()
 
