@@ -13,7 +13,8 @@
     "lint": "cross-env NODE_ENV=local npx eslint ./",
     "lint:prod": "cross-env NODE_ENV=production npx eslint ./",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "postinstall": "husky"
   },
   "dependencies": {
     "@quasar/extras": "^1.17.0",
