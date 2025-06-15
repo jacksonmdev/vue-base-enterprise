@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "commitlint": "commitlint --edit",
-    "dev": "vite",
+    "dev": "vite --mode dev",
     "dev:qa": "vite --mode qa",
     "dev:prod": "vite --mode prod",
     "build:qa": "cross-env NODE_ENV=staging npx eslint ./ && vue-tsc && vite build --mode qa",
