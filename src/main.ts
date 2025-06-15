@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createHead } from '@unhead/vue'
+import { createHead } from '@unhead/vue/client'
 import { Quasar, plugins } from './modules/base/extensions'
 import { useAppConfig } from './modules/base/composables'
 import App from './App.vue'
@@ -16,7 +16,6 @@ app.use(Quasar, {
 const config = useAppConfig(app)
 
 config.loadCoreUiComponents()
-// config.loadComponents('/path/to/components') <------ This is if you want to load components globally.
 config.setLocal('en', true)
 config.setStore()
 
