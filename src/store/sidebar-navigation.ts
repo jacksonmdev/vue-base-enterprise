@@ -12,4 +12,6 @@ export default defineStore('sidebar-navigation', () => {
   ])
 
   return { defaultMenu }
+},{
+  persist: true
 })
