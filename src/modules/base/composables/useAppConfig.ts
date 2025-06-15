@@ -4,31 +4,34 @@ import type { AppConfig } from 'modules/base/types'
 import * as CoreUiComponents from 'modules/base/ui'
 import enLocale from 'src/locales/en.json'
 
-export const useAppConfig = (app: App<Element>) => {
+const registerCoreUiComponents = (app: App<Element>) => {
+  Object.entries(CoreUiComponents).forEach(([name, component]) => {
+    app.component(name, component)
+  })
+}
+
+const setupI18n = (app: App<Element>) => {
+  const i18n = createI18n({
+    locale: 'en',
+    fallbackLocale: 'en',
+    messages: { en: enLocale },
+    legacy: false,
+  })
+
+  app.use(i18n)
+}
+
+export const useAppConfig = (app: App<Element>): AppConfig => {
   const config: AppConfig = {
-    loadCoreUiComponents: (): AppConfig => {
-      Object.entries(CoreUiComponents).forEach(([name, component]) =>
-        app.component(name, component),
-      )
+    setCoreUiComponents: () => {
+      registerCoreUiComponents(app)
       return config
     },
 
-    setLocal: (locale: string): AppConfig => {
-      const messages = {
-        en: enLocale
-      }
-
-      const i18n = createI18n({
-        locale: locale,
-        fallbackLocale: 'en',
-        messages: messages,
-        legacy: false,
-      })
-
-      app.use(i18n)
-
+    setLocal: () => {
+      setupI18n(app)
       return config
-    }
+    },
   }
 
   return config

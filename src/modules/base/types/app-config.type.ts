@@ -1,4 +1,4 @@
 export type AppConfig = {
-  loadCoreUiComponents: () => AppConfig
-  setLocal: (locale: string) => AppConfig
+  setCoreUiComponents: () => AppConfig
+  setLocal: () => AppConfig
 }
