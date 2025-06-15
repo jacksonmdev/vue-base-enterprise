@@ -1,11 +1,11 @@
 {
-  "name": "purple",
+  "name": "vue-base-enterprise",
   "private": true,
-  "version": "1.2.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "commitlint": "commitlint --edit",
-    "dev": "vite",
+    "dev": "vite --mode dev",
     "dev:qa": "vite --mode qa",
     "dev:prod": "vite --mode prod",
     "build:qa": "cross-env NODE_ENV=staging npx eslint ./ && vue-tsc && vite build --mode qa",
@@ -13,7 +13,8 @@
     "lint": "cross-env NODE_ENV=local npx eslint ./",
     "lint:prod": "cross-env NODE_ENV=production npx eslint ./",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "postinstall": "husky"
   },
   "dependencies": {
     "@quasar/extras": "^1.17.0",
