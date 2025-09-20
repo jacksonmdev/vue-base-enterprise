@@ -13,7 +13,10 @@ import { ref } from 'vue'
 // Import Geolocation from Capacitor
 import { Geolocation } from '@capacitor/geolocation'
 
-const loc = ref<{ lat: number | null; long: number | null }>({ lat: null, long: null })
+const loc = ref<{ lat: number | null; long: number | null }>({
+  lat: null,
+  long: null,
+})
 
 const getCurrentPosition = async () => {
   try {
