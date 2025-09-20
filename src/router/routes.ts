@@ -17,6 +17,11 @@ export const routes: RouteRecordRaw[] = [
         name: 'Home',
         component: () => import('src/pages/index-page.vue'),
       },
+      {
+        path: 'geolocation-demo',
+        name: 'GeolocationDemo',
+        component: () => import('src/pages/geolocation-demo.vue'),
+      },
     ],
   },
 ]
