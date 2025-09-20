@@ -32,7 +32,6 @@
    npx cap sync
    ```
 
-
 6. Test on device/emulator:
 
    ```bash
